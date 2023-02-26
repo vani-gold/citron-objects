@@ -38,10 +38,10 @@ function createJambScores(eng, govt, lit, crk) {
         crk: crk,
     };
   }
-// Musa object REPRESENDING musa jamb score
+// Musa object representing musa jamb score
 const jambScore= new createJambScores(70, 19, 90, 80);
 
-// Add the object as a property to Musa object you created above in (a) above
+// Adding the object as a property to Musa object i created above in (a) above
 function createPerson(name, age, location) {
     return {
       name: name,
@@ -58,10 +58,8 @@ function createPerson(name, age, location) {
 
 
 //================Qestion 4===================
-// What are the different ways you can clone an object? Give examples for each of them.
-
 // "1) There are 3 ways to clone/copy objects:- they include" 
-// "Assign", "spread syntax" & "JSON Parse"
+// "Assign", "spread operator" & "JSON Parse"
 
 //Example1: making a copy of person object (question2) using the assign keyword
 const secondPerson = Object.assign({}, person)
@@ -70,7 +68,7 @@ secondPerson.age = "29";
 secondPerson.location = "Cameroon";
 
 
-//Example2: making a copy of person object (question2) using the spread syntax
+//Example2: making a copy of person object (question2) using the spread operator
 const thirdPerson = {...person};
 
 //Example3: making a copy of person object (question2) using the JSON.parse
